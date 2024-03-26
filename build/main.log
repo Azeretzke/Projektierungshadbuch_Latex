@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  26 MAR 2024 18:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  26 MAR 2024 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -285,7 +285,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip50
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
  (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -1207,136 +1207,27 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip131
 \f@nch@O@olf=\skip132
 \f@nch@O@orf=\skip133
+) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/tabulary\tabulary.sty
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+\TY@count=\count533
+\TY@linewidth=\dimen329
+\tymin=\dimen330
+\tymax=\dimen331
+\TY@tablewidth=\dimen332
+) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen333
+\c@nlinenum=\count534
+\TeXr@lab=\toks63
 ) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks63
+\AP@output=\toks64
 \AP@partial=\box88
 \AP@footins=\box89
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:thkoeln' multiply defined.
-
-
-LaTeX Warning: Label `fig:thkoeln@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-
-LaTeX Warning: Label `lst:example' multiply defined.
-
-
-LaTeX Warning: Label `lst:example@cref' multiply defined.
-
-)
+ (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -1459,7 +1350,7 @@ Package hyperref Info: Link coloring ON on input line 7.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count533
+\c@lstlisting=\count535
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
  (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
@@ -1511,16 +1402,22 @@ Package biblatex Info: Reference segment=0 on input line 7.
  (titlepage.tex
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
- [1
+
+Overfull \hbox (14.32095pt too wide) in paragraph at lines 19--19
+| \TU/TrebuchetMS(0)/m/n/12 Stephan Kampshoff- LEBBING AUTOMATION & DRIVES GMBH 
+ []
+
+[1
 
 ]) (lists.tex (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.toc
 Package cleveref Info: loaded `ngerman' language definitions on input line 1.
- [1
-
-])
+)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
+ [1
+
+]
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
 Package cleveref Info: loaded `ngerman' language definitions on input line 6.
@@ -1554,11 +1451,15 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 1.
 
  [5
 
-])
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 28.
+]) (1_Historie.tex
+Overfull \hbox (29.83798pt too wide) in paragraph at lines 5--24
+ [][] 
+ []
+
+)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 60.
+Package cleveref Info: loaded `ngerman' language definitions on input line 28.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1569,10 +1470,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [1
 
-]
+] (2_Basic engineering.tex
+File: images/Basic Engineering Checklist Ablageort.png Graphic file (type bmp)
+<images/Basic Engineering Checklist Ablageort.png>
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 116.
+Package cleveref Info: loaded `ngerman' language definitions on input line 15.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1584,9 +1487,13 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 [2
 
 ]
+File: images/SICK IN40 - D030K - Schaltbild.png Graphic file (type bmp)
+<images/SICK IN40 - D030K - Schaltbild.png>
+File: images/SICK IN40-D0303K - Signalverhalten.png Graphic file (type bmp)
+<images/SICK IN40-D0303K - Signalverhalten.png>
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 153.
+Package cleveref Info: loaded `ngerman' language definitions on input line 33.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1595,10 +1502,20 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[3]
+[3
+
+]
+File: images/Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel.png Graphic file (type bmp)
+<images/Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel.png>
+
+Overfull \hbox (46.83401pt too wide) in paragraph at lines 43--46
+[][][][][][][] [] [][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][] [][] [][][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [][] [][][][][][][][] [][]
+ []
+
+)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 204.
+Package cleveref Info: loaded `ngerman' language definitions on input line 30.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1607,10 +1524,17 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[4]
+[4
+
+] (3_Projektcheckliste.tex
+Overfull \hbox (32.65474pt too wide) in paragraph at lines 5--19
+ [][] 
+ []
+
+)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 216.
+Package cleveref Info: loaded `ngerman' language definitions on input line 32.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1619,12 +1543,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[5]
-File: images/AufgabeLPlot.png Graphic file (type bmp)
-<images/AufgabeLPlot.png>
+[5
+
+] (4_Einleitung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 277.
+Package cleveref Info: loaded `ngerman' language definitions on input line 34.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1635,10 +1559,10 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [6
 
-]
+] (5_Wichtige Festlegungen.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 301.
+Package cleveref Info: loaded `ngerman' language definitions on input line 36.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1647,12 +1571,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[7]
-File: images/AufgabeOPlot.png Graphic file (type bmp)
-<images/AufgabeOPlot.png>
+[7
+
+] (6_Wichtige Erläuterungen Begriffsdefinitionen.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 329.
+Package cleveref Info: loaded `ngerman' language definitions on input line 38.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1661,10 +1585,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[8]
+[8
+
+] (7_Grundeinstellungen TIA-Portal.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 329.
+Package cleveref Info: loaded `ngerman' language definitions on input line 40.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1673,10 +1599,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[9]
+[9
+
+] (8_Projekterstellung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 367.
+Package cleveref Info: loaded `ngerman' language definitions on input line 42.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1687,10 +1615,10 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [10
 
-]
+] (9_Hardwarekonfiguration.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 427.
+Package cleveref Info: loaded `ngerman' language definitions on input line 44.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1699,10 +1627,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[11]
+[11
+
+] (10_Regeln zur Softwareerstellung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 448.
+Package cleveref Info: loaded `ngerman' language definitions on input line 46.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1711,10 +1641,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[12]
+[12
+
+] (11_Antriebsprojektierung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 450.
+Package cleveref Info: loaded `ngerman' language definitions on input line 48.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1725,30 +1657,114 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [13
 
-] (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
+] (12_Visualiserung.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 50.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[14
+
+] (13_Mehrsprachigkeit Übersetzungen.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 52.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[15
+
+] (14_Funktionsbeschreibung.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 54.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[16
+
+] (15_Multiuser.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 56.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[17
+
+] (16_Inbetriebnahme.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 58.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[18
+
+] (17_Troubleshooting.tex)
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 61.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[19
+
+]
+
+LaTeX Warning: Empty bibliography on input line 62.
+
+(c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 )
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4A3D3984A2BA961C6335B56C73AA0F4D;2527.
+(rerunfilecheck)             Checksum: 7B0B9F2F67FE5E43B491CE314D6A8410;3832.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58533 strings out of 409738
- 1340022 string characters out of 5776037
- 2599422 words of memory out of 5000000
- 79716 multiletter control sequences out of 15000+600000
- 566426 words of font info for 83 fonts, out of 8000000 for 9000
+ 57454 strings out of 409738
+ 1326689 string characters out of 5776037
+ 2421730 words of memory out of 5000000
+ 78584 multiletter control sequences out of 15000+600000
+ 565030 words of font info for 74 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 98i,13n,98p,2492b,6655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,98p,2492b,3988s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (19 pages, 282168 bytes).
+Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (25 pages, 120968 bytes).

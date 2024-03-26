@@ -1,0 +1,47 @@
+\section{Basic engineering}
+\subsection{Checkliste}
+Siehe Checkliste unter <Projektordner> 03.Basic Engineering, Safety
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.8 \textwidth]{Basic Engineering Checklist Ablageort.png}
+    \caption{Basic Engineering Checklist Ablageort}
+    \label{fig:Basic Engineering Checklist Ablageort}
+\end{figure} 
+
+
+\textbf{Diese Liste ist zu Beginn eines jeden Projektes durchzuarbeiten und auszufüllen!}
+
+\clearpage
+\subsection{Beispiele, warum Basic Engineering wichtig ist}
+\subsubsection{1-kanaliger induktiver Sensor PLd -> besondere Beschaltung}
+Sensor: SICK IN40-D0303K
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.5 \textwidth]{SICK IN40 - D030K - Schaltbild.png}
+    \caption{SICK IN40 - D030K - Schaltbild}
+    \label{fig:SICK IN40 - D030K - Schaltbild}
+\end{figure} 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.5 \textwidth]{SICK IN40-D0303K - Signalverhalten.png}
+    \caption{SICK IN40-D0303K - Signalverhalten}
+    \label{fig:SICK IN40-D0303K - Signalverhalten}
+\end{figure} 
+\clearpage
+Schaltungsbeispiel:
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.5 \textwidth]{Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel.png}
+    \caption{Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel}
+    \label{fig:Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel}
+\end{figure}
+
+Um in 1-kanaliger Ausführuing PLd zu erreichen, muss der Sensor selbst überwachen, dass eingangsseitig kein (Anschluss TE) kein Kurzschluss vorliegt. Daher ist auf dem Kanal ein ge-pulstes Signal vorzusehen, ansonsten geht der Sensor von einem Fehler aus und schaltet auch bei Betätigung nicht mehr.
+Softwareseitig bietet Siemens dazu eine Lösung, die unter dem folgenden Link zu finden ist:
+\url{https://support.industry.siemens.com/cs/document/109818998/sicheres-erfassen-mit-induktiver-taktender-sensorik-bis-sil-3-pl-d?dti=0&lc=de-DE}
+
+Beitrags-ID SIOS: 109818998

@@ -23,6 +23,8 @@
 \newcommand{\version}{15.0}  
 \newcommand{\authorname}{Daniel Klein-Günnewick}               % and name of author here
 \newcommand{\state}{Verbindlich, in Bearbeitung}
+\newcommand{\lasteditor}{Stephan Kampshoff}
+\newcommand{\lebbing}{LEBBING AUTOMATION \& DRIVES GMBH}
 
                                                         % applied in whole document
 \title{\titlename}
@@ -127,6 +129,8 @@
 \usepackage{tabto}
 
 \usepackage{fancyhdr}   %Kopfzeile
+\makeatletter
+
 % Kopfzeilenstil definieren
 \pagestyle{fancy}
 \fancyhf{} % Alle Kopf- und Fußzeilen löschen
@@ -139,12 +143,13 @@
 \setlength{\headheight}{30pt} % Größerer Wert für mehr Platz
 
 %Fußzeile definieren
-\fancyfoot[L]{LEBBING AUTOMATION \& DRIVES GMBH}
+\fancyfoot[L]{\lebbing}
 \fancyfoot[R]{\thepage}
 
+\makeatother
 
-
-
+\usepackage{tabulary} %Einstellungen von Tabellen
+\usepackage{makecell}
 \usepackage{afterpage}                                  % commands get expanded after the current                                                           % page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
     \newpage                                            % -> useful for \clearpage
