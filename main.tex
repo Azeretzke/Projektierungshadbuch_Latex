@@ -1,13 +1,12 @@
+%---- general settings ----%
 
-
-\include{config.tex}
+\input{config.tex}
 
 %---- title page ----%
 
 \begin{document}
 
 \input{titlepage.tex}
-
 
 \clearpage
 
@@ -22,42 +21,80 @@
 \setcounter{savepage}{\arabic{page}}
 \pagenumbering{arabic}
 
-
-
 \input{1_Historie.tex}
+
 \clearpage
+
 \input{2_Basic engineering.tex}
+
 \clearpage
+
 \input{3_Projektcheckliste.tex}
+
 \clearpage
+
 \input{4_Einleitung.tex}
+
 \clearpage
+
 \input{5_Wichtige Festlegungen.tex}
+
 \clearpage
+
 \input{6_Wichtige Erläuterungen Begriffsdefinitionen.tex}
+
 \clearpage
+
 \input{7_Grundeinstellungen TIA-Portal.tex}
+
 \clearpage
+
 \input{8_Projekterstellung.tex}
+
 \clearpage
+
 \input{9_Hardwarekonfiguration.tex}
+
 \clearpage
+
 \input{10_Regeln zur Softwareerstellung.tex}
+
 \clearpage
+
 \input{11_Antriebsprojektierung.tex}
+
 \clearpage
+
 \input{12_Visualiserung.tex}
+
 \clearpage
+
 \input{13_Mehrsprachigkeit Übersetzungen.tex}
+
 \clearpage
+
 \input{14_Funktionsbeschreibung.tex}
+
 \clearpage
+
 \input{15_Multiuser.tex}
+
 \clearpage
+
 \input{16_Inbetriebnahme.tex}
+
 \clearpage
+
 \input{17_Troubleshooting.tex}
 
 \clearpage
-\printbibliography
+
+\pagenumbering{Roman}
+\setcounter{page}{\thesavepage}
+
+\printbibliography[heading = bibintoc,
+                   title = Literaturverzeichnis]
+
+\clearpage
+
 \end{document}
