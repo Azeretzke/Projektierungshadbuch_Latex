@@ -1,36 +1,52 @@
-%!TEX program = lualatex
 \documentclass[12pt]{article}                           % font size and type of document
 \usepackage[a4paper, margin=25mm]{geometry}             % paper size and margins
 \usepackage[onehalfspacing]{setspace}                   % line spacing
-\usepackage{lipsum}                                     % create dummy text in order to check
-                                                        % formating
+\usepackage{lipsum}                                     % create dummy text in order to check formating
 
-\usepackage[T1]{fontenc}                                % hyphenating of words containing accented   
-                                                                                                        % chars, font encoding for accented chars
-\usepackage{textcomp}                                   % additional symbols
-%\usepackage{mathptmx}                                   % font type (Times)
-
-\usepackage{fontspec}
-\setmainfont{Trebuchet MS}
-
-%\usepackage{lmodern}                                    % font type (Latin Modern Sans Serif)
-%\usepackage{tgadventor}                                 % font type (TEX Gyre Adventor)
-\usepackage[utf8]{inputenc}                             % used for mutated vowels e.g. ä, ü, ö, ß
 \usepackage[ngerman]{babel}                             % load multilingual support for german
-\usepackage[babel,german=guillemets]{csquotes}          % ensure multilingual support for biblatex 
-                                                        % quoting
-\newcommand{\titlename}{Projektierungshandbuch TIA-Portal}                    % change title of document
-\newcommand{\version}{15.0}  
-\newcommand{\authorname}{Daniel Klein-Günnewick}               % and name of author here
-\newcommand{\state}{Verbindlich, in Bearbeitung}
-\newcommand{\lasteditor}{Stephan Kampshoff}
-\newcommand{\lebbing}{LEBBING AUTOMATION \& DRIVES GMBH}
+\usepackage[babel,german=guillemets]{csquotes}          % ensure multilingual support for biblatex quoting
 
-                                                        % applied in whole document
-\title{\titlename}
+\usepackage{iftex}
+\ifPDFTeX
+   \usepackage[utf8]{inputenc}
+   \usepackage[T1]{fontenc}                             % font encoding for pdflatex compiler
+   \usepackage{lmodern}
+\else
+   \ifXeTeX
+     \usepackage{fontspec}                              % font encoding for xelatex compiler
+   \else 
+     \usepackage{luatextra}                             % font encoding for lulatex compiler
+   \fi
+   \setmainfont{Trebuchet MS}
+   \defaultfontfeatures{Ligatures=TeX}
+\fi
+
+\newcommand{\titlename}{Projektierungshandbuch TIA-Portal}  % change title of document here
+\newcommand{\version}{15.0}                                 % change version number here
+\newcommand{\authorname}{Daniel Klein-Günnewick}            % change author name here
+\newcommand{\state}{Verbindlich, in Bearbeitung}            % change document state here
+\newcommand{\lasteditor}{Stephan Kampshoff}                 % change last editor name here
+\newcommand{\company}{LEBBING AUTOMATION \& DRIVES GMBH}    % change company name her
+
+\usepackage{fancyhdr}                                   % customize header and footer
+\makeatletter
+\pagestyle{fancy}                                       % define new page style called fancy
+\fancyhf{}                                              % delete all header and footer content from page style
+\renewcommand{\headrulewidth}{0pt}                      % delete horizontal line in header
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}     % save section name and number
+\fancyhead[L]{\includegraphics[width=4.0cm]{LebbingLogo.png}}   % left header content
+\fancyhead[R]{ \titlename~ V\version \par 
+Status: \state 
+\par \rightmark}                                                % right header content
+\setlength{\headheight}{43pt}                           % height of header for more space
+\fancyfoot[L]{\company}                                 % company name in left footer
+\fancyfoot[R]{\thepage}                                 % page number in right footer
+\makeatother
+
+\title{\titlename}                                      % for pdf document information
 \author{\authorname}
 \date{\today}
-\newcounter{savepage}
+\newcounter{savepage}                                   % save page number inside document
 
 \usepackage[hyphens]{url}                               % hyphening links
 \usepackage{hyperref}
@@ -43,8 +59,7 @@
     pdftitle={\titlename},
     pdfauthor={\authorname}
     }
-\urlstyle{same}                                         % allows links within pdf document
-                                                        % and to external websites
+\urlstyle{same}                                         % allows links within pdf document and to external websites
 
 \usepackage{xcolor}                                     % load xcolor package for customization
 \usepackage{listings}                                   % supports listings environments
@@ -52,7 +67,6 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
 \lstdefinestyle{mystyle}{                               % define listings style
     language=[LaTeX]TeX,
     morecomment=[l]{//},
@@ -72,10 +86,8 @@
     showtabs=false,                  
     tabsize=2
 }
-
-
 \renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
-\renewcommand{\lstlistingname}{Quellcode}               % change name of list of listings
+\renewcommand{\lstlistingname}{Quellcode}               % change displayed name of list of listings
 \lstset{style=mystyle}                                  % set listings style to my defined style
 
 \usepackage{graphicx}                                   % required for inserting images
@@ -94,12 +106,13 @@
 \pgfplotsset{compat=1.18}                               % set used pgfplot package version for compatibility
 \usepackage{amsmath}                                    % enhanced mathematical expressions
 \usepackage{siunitx}                                    % includes si units support
-\usepackage[ngerman, noabbrev]{cleveref}                % improves referencing of tables, 
-                                                        % figures, equations, etc.
-%\crefformat{equation}{Gl.~(#2#1#3)}                    % customise reference to Gl. (default
-                                                        %  "Gleichung")
+\usepackage[ngerman, noabbrev]{cleveref}                % improves referencing of tables, figures, equations, etc.
+%\crefformat{equation}{Gl.~(#2#1#3)}                    % customise reference to Gl. (default "Gleichung")
 \crefname{listing}{Quellcode}{Quellcodes}               % change reference name
 \Crefname{listing}{Quellcode}{Quellcodes}
+\usepackage{tabulary}                                   % advanced table options
+\usepackage{makecell}
+\usepackage{tabto}                                      % tabulator support
 
 \usepackage{tocloft}                                    % extension for toc, lof, lot and other lists
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}   % dot line for sections in toc
@@ -122,35 +135,8 @@
 %\DeclareLanguageMapping{ngerman}{german-apa}           % only necessary for biblatex-apa style
 %\DeclareFieldInputHandler{extradate}{\def\NewValue{}}  % remove suffix letters if author and year
 \addbibresource{references.bib}                         % are identical in bibliography
-
-%Abbildungsverzeichnis
-\usepackage{tocloft}
-
-\usepackage{tabto}
-
-\usepackage{fancyhdr}   %Kopfzeile
-\makeatletter
-
-% Kopfzeilenstil definieren
-\pagestyle{fancy}
-\fancyhf{} % Alle Kopf- und Fußzeilen löschen
-\renewcommand{\headrulewidth}{0pt} % Horizontale Linie in Kopfzeile entfernen
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-% Kopfzeile definieren
-\fancyhead[L]{\includegraphics[width=3.8cm]{LebbingLogo.png}} % Bild in der linken Kopfzeile
-\fancyhead[R]{ \titlename~ V\version \par Status: \state \par \rightmark} % Rechter Kopfzeilentext
-% Höhe der Kopfzeile festlegen
-\setlength{\headheight}{30pt} % Größerer Wert für mehr Platz
-
-%Fußzeile definieren
-\fancyfoot[L]{\lebbing}
-\fancyfoot[R]{\thepage}
-
-\makeatother
-
-\usepackage{tabulary} %Einstellungen von Tabellen
-\usepackage{makecell}
-\usepackage{afterpage}                                  % commands get expanded after the current                                                           % page  
+                                   
+\usepackage{afterpage}                                  % commands get expanded after the current page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
     \newpage                                            % -> useful for \clearpage
     \null                                               % define command to insert blank page
