@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}                           % font size and type of document
+\documentclass[12pt]{report}                            % font size and type of document
 \usepackage[a4paper, margin=25mm]{geometry}             % paper size and margins
 \usepackage[onehalfspacing]{setspace}                   % line spacing
 \usepackage{lipsum}                                     % create dummy text in order to check formating
@@ -26,21 +26,58 @@
 \newcommand{\authorname}{Daniel Klein-Günnewick}            % change author name here
 \newcommand{\state}{Verbindlich, in Bearbeitung}            % change document state here
 \newcommand{\lasteditor}{Stephan Kampshoff}                 % change last editor name here
-\newcommand{\company}{LEBBING AUTOMATION \& DRIVES GMBH}    % change company name her
+\newcommand{\company}{Lebbing automation \& drives GmbH}    % change company name her
+
+\usepackage[nostruts]{titlesec}
+\titleformat{\chapter}[block]
+    {\normalfont\LARGE\bfseries}{\thechapter}{10pt}{}
+\titlespacing*{\chapter}{0pt}{*-5}{5pt}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{10pt}{}
+\titlespacing*{\section}{0pt}{*-5}{5pt}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{10pt}{}
+\titlespacing*{\subsection}{0pt}{*-5}{5pt}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{10pt}{}
+\titlespacing*{\subsubsection}{0pt}{*-5}{5pt}
+
+\usepackage[titles]{tocloft}                                    % extension for toc, lof, lot and other lists
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}  % dotted chapter leaders
+\renewcommand{\cftchapfont}{\normalfont}                % toc entries in normal font style
+\renewcommand{\cftchappagefont}{\normalfont}            % toc page numbers in normal font style
+\setlength{\cftchapnumwidth}{20pt}                      % adjust the width of the chapter numbers
+\setlength{\cftsecnumwidth}{30pt}                       % adjust the width of the section numbers
+\setlength{\cftsubsecnumwidth}{40pt}                    % adjust the width of the subsection numbers
+\setlength{\cftfignumwidth}{40pt}                       % adjust the width of the figure numbers
+\setlength{\cfttabnumwidth}{40pt}                       % adjust the width of the table numbers
+\usepackage{tocbibind}                                  % adds all lists to table of contents
 
 \usepackage{fancyhdr}                                   % customize header and footer
 \makeatletter
+\fancypagestyle{plain}{
+  \fancyhf{}                                              % delete all header and footer content from page style
+  \fancyhead[L]{\includegraphics[width=4.0cm]{LebbingLogo.png}}   % left header content
+  \fancyhead[R]{ \titlename~ V\version \par 
+  Status: \state 
+  \par \nouppercase{\leftmark}}                                         % right header content
+  \setlength{\headheight}{43pt}                           % height of header for more space
+  \fancyfoot[L]{\company}                                 % company name in left footer
+  \fancyfoot[R]{\thepage}                                 % page number in right footer
+}
 \pagestyle{fancy}                                       % define new page style called fancy
 \fancyhf{}                                              % delete all header and footer content from page style
-\renewcommand{\headrulewidth}{0pt}                      % delete horizontal line in header
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}     % save section name and number
 \fancyhead[L]{\includegraphics[width=4.0cm]{LebbingLogo.png}}   % left header content
 \fancyhead[R]{ \titlename~ V\version \par 
 Status: \state 
-\par \rightmark}                                                % right header content
+\par \nouppercase{\leftmark}}                           % right header content
 \setlength{\headheight}{43pt}                           % height of header for more space
 \fancyfoot[L]{\company}                                 % company name in left footer
 \fancyfoot[R]{\thepage}                                 % page number in right footer
+\renewcommand{\headrulewidth}{0pt}                      % delete horizontal line in header
+\renewcommand{\chaptermark}[1]{
+\markboth{\thechapter{} #1}{}
+}
 \makeatother
 
 \title{\titlename}                                      % for pdf document information
@@ -48,7 +85,7 @@ Status: \state
 \date{\today}
 \newcounter{savepage}                                   % save page number inside document
 
-\usepackage[hyphens]{url}                               % hyphening links
+\usepackage{xurl}                                       % hyphening links
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -68,12 +105,14 @@ Status: \state
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \lstdefinestyle{mystyle}{                               % define listings style
-    language=[LaTeX]TeX,
+    language={C++},
     morecomment=[l]{//},
-    texcsstyle=*[1]\color{codepurple},
-    emphstyle=\color{codepurple},
+    morekeywords={String},
     backgroundcolor=\color{backcolour},   
-    commentstyle=\color{black},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
     basicstyle=\ttfamily\footnotesize,
     breakatwhitespace=false,         
     breaklines=true,                 
@@ -95,9 +134,9 @@ Status: \state
 \usepackage{caption}                                    % more customization of captions
 %\captionsetup{figurename=Abb., tablename=Tab.}
 \usepackage{wrapfig}                                    % wrap text around figures
-%\DeclareCaptionType{mycapequ}[][Formelverzeichnis]      % adds list of equations
-%\DeclareCaptionLabelFormat{nan}{Gleichung #2}           % caption compatibility with equations 
-%\captionsetup[mycapequ]{labelformat=nan}
+\DeclareCaptionType{mycapequ}[][Formelverzeichnis]      % adds list of equations
+\DeclareCaptionLabelFormat{nan}{Gleichung #2}           % caption compatibility with equations 
+\captionsetup[mycapequ]{labelformat=nan}
 
 \usepackage[final]{pdfpages}                            % adds support for pdf file integration
 \usepackage{tikz}                                       % create graphics in latex environment
@@ -114,27 +153,23 @@ Status: \state
 \usepackage{makecell}
 \usepackage{tabto}                                      % tabulator support
 
-\usepackage{tocloft}                                    % extension for toc, lof, lot and other lists
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}   % dot line for sections in toc
-\usepackage{tocbibind}                                  % adds all lists to table of contents
-
 \usepackage[acronym,toc,translate=babel,
             nonumberlist, nopostdot]{glossaries}
 \renewcommand{\glsnamefont}[1]{\textbf{#1}}
 \setlength\LTleft{0pt}
 \setlength\LTright{0pt}
-\setlength\glsdescwidth{0.8\hsize}                      % adds support for glossary and
-%\makeglossaries                                        % acronyms and abbreviations
+\setlength\glsdescwidth{0.8\hsize}                      % adds support for glossary and acronyms and abbreviations
+\makenoidxglossaries
+\input{acronyms}
+\input{glossary}
 
-\usepackage[                                            % header for bibliography
+\usepackage[                                            % enable bibliography
     backend=biber, 
     natbib=true,
     hyperref=true,
     style=ieee
 ]{biblatex}
-%\DeclareLanguageMapping{ngerman}{german-apa}           % only necessary for biblatex-apa style
-%\DeclareFieldInputHandler{extradate}{\def\NewValue{}}  % remove suffix letters if author and year
-\addbibresource{references.bib}                         % are identical in bibliography
+\addbibresource{references.bib}                         % add bibliography file
                                    
 \usepackage{afterpage}                                  % commands get expanded after the current page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
