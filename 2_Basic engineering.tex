@@ -1,6 +1,6 @@
-\section{Basic engineering}
+\chapter{Basic engineering}\label{chap:Basic engineering}
 
-\subsection{Checkliste}
+\section{Checkliste}\label{sec:Checkliste}
 
 Siehe Checkliste unter <Projektordner> 03.Basic Engineering, Safety
 
@@ -14,9 +14,9 @@ Siehe Checkliste unter <Projektordner> 03.Basic Engineering, Safety
 \noindent \textbf{Diese Liste ist zu Beginn eines jeden Projektes durchzuarbeiten und auszufüllen!}
 
 \clearpage
-\subsection{Beispiele, warum Basic Engineering wichtig ist}
+\section{Beispiele, warum Basic Engineering wichtig ist}\label{sec:Beispiele, warum Basic Engineering wichtig ist}
 
-\subsubsection{1-kanaliger induktiver Sensor PLd -> besondere Beschaltung}
+\subsection{1-kanaliger induktiver Sensor PLd -> besondere Beschaltung}\label[]{subsec:1-kanaliger induktiver Sensor PLd -> besondere Beschaltung}
 
 Sensor: SICK IN40-D0303K
 
@@ -36,7 +36,7 @@ Sensor: SICK IN40-D0303K
 
 \clearpage
 
-Schaltungsbeispiel:
+\noindent Schaltungsbeispiel:
 
 \begin{figure}[!ht]
     \centering
@@ -45,9 +45,11 @@ Schaltungsbeispiel:
     \label{fig:Induktiver Sensor 1-kanalig PLd Schaltungsbeispiel}
 \end{figure}
 
-\noindent Um in 1-kanaliger Ausführuing PLd zu erreichen, muss der Sensor selbst überwachen, dass eingangsseitig kein (Anschluss TE) kein Kurzschluss vorliegt. Daher ist auf dem Kanal ein ge-pulstes Signal vorzusehen, ansonsten geht der Sensor von einem Fehler aus und schaltet auch bei Betätigung nicht mehr.
+\noindent Um in 1-kanaliger Ausführung PLd zu erreichen, muss der Sensor selbst überwachen, dass eingangsseitig kein (Anschluss TE) kein Kurzschluss vorliegt. Daher ist auf dem Kanal ein gepulstes Signal vorzusehen, ansonsten geht der Sensor von einem Fehler aus und schaltet auch bei Betätigung nicht mehr.
 Softwareseitig bietet Siemens dazu eine Lösung, die unter dem folgenden Link zu finden ist:
 
-\noindent \url{https://support.industry.siemens.com/cs/document/109818998/sicheres-erfassen-mit-induktiver-taktender-sensorik-bis-sil-3-pl-d?dti=0&lc=de-DE} Beitrags-ID SIOS: 109818998
+\noindent \url{https://support.industry.siemens.com/cs/document/109818998/sicheres-erfassen-mit-induktiver-taktender-sensorik-bis-sil-3-pl-d?dti=0&lc=de-DE} % \- for manual line break in url if necessary
+
+\noindent Beitrags-ID SIOS: 109818998
 
 \cite{todo}
