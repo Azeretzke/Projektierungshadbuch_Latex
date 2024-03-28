@@ -89,11 +89,31 @@
 
 \clearpage
 
+\input{99_Beispielkapitel.tex}
+
+\clearpage
+
+% --- bibliography --- %
+
 \pagenumbering{Roman}
 \setcounter{page}{\thesavepage}
 
 \printbibliography[heading = bibintoc,
                    title = Literaturverzeichnis]
+
+\clearpage
+
+%---- appendix ----%
+
+\appendix
+
+\input{appendix}
+
+\clearpage
+
+%---- glossary ----%
+
+\printnoidxglossary[style=long, title={Glossar}]
 
 \clearpage
 
