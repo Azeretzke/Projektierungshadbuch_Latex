@@ -640,6 +640,8 @@ INPUT .\6_Wichtige Erläuterungen Begriffsdefinitionen.tex
 INPUT 6_Wichtige Erläuterungen Begriffsdefinitionen.tex
 INPUT .\images\LebbingLogo.png
 INPUT .\images\LebbingLogo.png
+INPUT .\images\LebbingLogo.png
+INPUT .\images\LebbingLogo.png
 INPUT .\7_Grundeinstellungen TIA-Portal.tex
 INPUT .\7_Grundeinstellungen TIA-Portal.tex
 INPUT 7_Grundeinstellungen TIA-Portal.tex
@@ -693,6 +695,8 @@ INPUT .\images\LebbingLogo.png
 INPUT .\17_Troubleshooting.tex
 INPUT .\17_Troubleshooting.tex
 INPUT 17_Troubleshooting.tex
+INPUT .\images\LebbingLogo.png
+INPUT .\images\LebbingLogo.png
 INPUT .\images\LebbingLogo.png
 INPUT .\images\LebbingLogo.png
 INPUT c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux

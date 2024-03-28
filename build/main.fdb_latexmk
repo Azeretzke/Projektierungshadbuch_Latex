@@ -1,16 +1,17 @@
 # Fdb version 4
-["biber build/main"] 1711480425.18437 "build/main.bcf" "build/main.bbl" "build/main" 1711480736.08446 0
-  "build/main.bcf" 1711480735 107150 e36666e65accbf63ee19a604c6fe0354 "xelatex"
+["biber build/main"] 1711535568.03148 "build/main.bcf" "build/main.bbl" "build/main" 1711536113.09293 0
+  "build/main.bcf" 1711536112 107276 7f75f875464947e85d499290833150a0 "xelatex"
+  "references.bib" 1711535374 3285 9cec54e3a6c67d9df515c3ae329d315d ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1711480735.57545 "build/main.xdv" "build/main.pdf" "build/main" 1711480736.09911 0
-  "build/main.xdv" 1711480735 120968 b277611bfd0a3ed166f8ac748939d455 "xelatex"
+["xdvipdfmx"] 1711536112.52873 "build/main.xdv" "build/main.pdf" "build/main" 1711536113.10631 0
+  "build/main.xdv" 1711536112 164124 ab239ef18613cf76f7c0b2e49a58d7d7 "xelatex"
   (generated)
   "build/main.pdf"
   (rewritten before read)
-["xelatex"] 1711480731.96864 "c:/Users/azeretzk/Documents/Eigene Dateien/Projekte/Projektierungshandbuch/Projektierungshadbuch_Latex/main.tex" "build/main.xdv" "main" 1711480736.08467 0
+["xelatex"] 1711536108.78011 "c:/Users/azeretzk/Documents/Eigene Dateien/Projekte/Projektierungshandbuch/Projektierungshadbuch_Latex/main.tex" "build/main.xdv" "main" 1711536113.09317 0
   "10_Regeln zur Softwareerstellung.tex" 1711478176 39 b809635c0ebb5102c27827d5049f2c47 ""
   "11_Antriebsprojektierung.tex" 1711478195 31 b0c2ae4540d15b7a5a38388dd4bf3f77 ""
   "12_Visualiserung.tex" 1711478203 24 792d65f542e33a1103f217279e881f2b ""
@@ -21,10 +22,10 @@
   "17_Troubleshooting.tex" 1711478276 25 7da675bd6bfacec0da81cacc4a8be8f5 ""
   "1_Historie.tex" 1711480642 1625 e2d74342be6a2911319015af51174d7c ""
   "2_Basic engineering.tex" 1711478546 2018 7f48a91f79743c2ffad137f0c760c276 ""
-  "3_Projektcheckliste.tex" 1711479931 1352 ee9526e3d029a419e4423d07946e5816 ""
-  "4_Einleitung.tex" 1711477946 20 9c1bdcae68a16c4ab5f9b2e1eff4fb2e ""
-  "5_Wichtige Festlegungen.tex" 1711477955 31 cd749164193ba1f02e6c1c4597436dbc ""
-  "6_Wichtige Erläuterungen Begriffsdefinitionen.tex" 1711478088 55 9a0a388244396f40aca8f78a39515b16 ""
+  "3_Projektcheckliste.tex" 1711534829 1364 40f8c66adc926721fd5e01a5e798d673 ""
+  "4_Einleitung.tex" 1711534882 423 41c92754bd4da9d56d12ec8d5bcc2442 ""
+  "5_Wichtige Festlegungen.tex" 1711535017 681 6529d88f85aa7243c38ac0b4d0161e91 ""
+  "6_Wichtige Erläuterungen Begriffsdefinitionen.tex" 1711536107 2076 c11dbd8c4b7c7a0ac111a49447e61248 ""
   "7_Grundeinstellungen TIA-Portal.tex" 1711478109 39 988fd43dad57451fe80580acd7985a84 ""
   "8_Projekterstellung.tex" 1711478142 27 2f923ce4b6ff0e05ea7d25356f3ef356 ""
   "9_Hardwarekonfiguration.tex" 1711478160 31 f8ee92b9f5236fbfbe95ef8c12db935d ""
@@ -308,14 +309,14 @@
   "C:/Users/azeretzk/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/azeretzk/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/azeretzk/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/main.aux" 1711480735 5434 2c297dfb57377532a4c9d0aecd585cf2 "xelatex"
-  "build/main.bbl" 1711480427 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.lof" 1711480735 493 2916f872a47ee620d4798cb128875b0f "xelatex"
-  "build/main.lol" 1711480734 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "build/main.lot" 1711480735 216 0ea563c15e89dd5ede09f4dd6c786b8f "xelatex"
-  "build/main.out" 1711480735 3832 7b0b9f2f67fe5e43b491ce314d6a8410 "xelatex"
-  "build/main.run.xml" 1711480735 2501 63a15b87cc821b0d868c8c9bda2c4c87 "xelatex"
-  "build/main.toc" 1711480735 1920 e7fc9bef5471416e254042e3e88aceb9 "xelatex"
+  "build/main.aux" 1711536112 6413 ec959937480c0e2a62441a1df2f72197 "xelatex"
+  "build/main.bbl" 1711535570 1781 32822d27a313ae843201ba73ccfb1d1d "biber build/main"
+  "build/main.lof" 1711536112 493 2916f872a47ee620d4798cb128875b0f "xelatex"
+  "build/main.lol" 1711536111 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "build/main.lot" 1711536112 218 8ba2ce4d63bde565d85e78c5cafb25ee "xelatex"
+  "build/main.out" 1711536112 4641 c500d0a298a2f2aca8115b9204e8fc06 "xelatex"
+  "build/main.run.xml" 1711536112 2501 63a15b87cc821b0d868c8c9bda2c4c87 "xelatex"
+  "build/main.toc" 1711536112 2447 1efb80e9aa52f4ad0d3f0263fb0d5ff5 "xelatex"
   "c:/Users/azeretzk/Documents/Eigene Dateien/Projekte/Projektierungshandbuch/Projektierungshadbuch_Latex/main.tex" 1711480728 1152 982555dda004a93e366dec04cb003ce8 ""
   "config.tex" 1711479685 7986 b4454197e98a47a4865fc61c73b34668 ""
   "images/Basic Engineering Checklist Ablageort.png" 1711476044 54822 4548294cfd87769affb5e4269b254402 ""

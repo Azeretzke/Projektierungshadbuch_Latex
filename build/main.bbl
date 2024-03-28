@@ -16,5 +16,39 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Beckhoff}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b6bc3eaad2d4a630639990b8fe30ec18}{%
+           family={Beckhoff},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \strng{fullhash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \strng{bibnamehash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \strng{authorbibnamehash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \strng{authornamehash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \strng{authorfullhash}{b6bc3eaad2d4a630639990b8fe30ec18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quellen Beschreibung}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://download.beckhoff.com/download/Document/ipc/industrial-pc/ipc_diagnose_de.pdf
+      \endverb
+      \verb{url}
+      \verb https://download.beckhoff.com/download/Document/ipc/industrial-pc/ipc_diagnose_de.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

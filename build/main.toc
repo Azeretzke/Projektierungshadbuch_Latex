@@ -10,16 +10,22 @@
 \contentsline {subsubsection}{\numberline {2.2.1}1-kanaliger induktiver Sensor PLd -> besondere Beschaltung}{3}{subsubsection.2.2.1}%
 \contentsline {section}{\numberline {3}Projektcheckliste}{5}{section.3}%
 \contentsline {section}{\numberline {4}Einleitung}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Leserkreis}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Literaturempfehlung}{6}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Wichtige Festlegungen}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Platzhalter}{7}{subsection.5.1}%
 \contentsline {section}{\numberline {6}Wichtige Erläuterungen, Begriffsdefinitionen}{8}{section.6}%
-\contentsline {section}{\numberline {7}Grundeinstellungen TIA-Portal}{9}{section.7}%
-\contentsline {section}{\numberline {8}Projekterstellung}{10}{section.8}%
-\contentsline {section}{\numberline {9}Hardwarekonfiguration}{11}{section.9}%
-\contentsline {section}{\numberline {10}Regeln zur Softwareerstellung}{12}{section.10}%
-\contentsline {section}{\numberline {11}Antriebsprojektierung}{13}{section.11}%
-\contentsline {section}{\numberline {12}Visualisierung}{14}{section.12}%
-\contentsline {section}{\numberline {13}Mehrsprachigkeit / Übersetzungen}{15}{section.13}%
-\contentsline {section}{\numberline {14}Funktionsbeschreibung}{16}{section.14}%
-\contentsline {section}{\numberline {15}Multiuser}{17}{section.15}%
-\contentsline {section}{\numberline {16}Inbetriebnahme}{18}{section.16}%
-\contentsline {section}{\numberline {17}Troubleshooting}{19}{section.17}%
+\contentsline {subsection}{\numberline {6.1}Remanenz}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Optimierte Bausteine \blx@tocontentsinit {0}\cite [13]{Beckhoff}}{9}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Vorteile}{9}{subsubsection.6.2.1}%
+\contentsline {section}{\numberline {7}Grundeinstellungen TIA-Portal}{10}{section.7}%
+\contentsline {section}{\numberline {8}Projekterstellung}{11}{section.8}%
+\contentsline {section}{\numberline {9}Hardwarekonfiguration}{12}{section.9}%
+\contentsline {section}{\numberline {10}Regeln zur Softwareerstellung}{13}{section.10}%
+\contentsline {section}{\numberline {11}Antriebsprojektierung}{14}{section.11}%
+\contentsline {section}{\numberline {12}Visualisierung}{15}{section.12}%
+\contentsline {section}{\numberline {13}Mehrsprachigkeit / Übersetzungen}{16}{section.13}%
+\contentsline {section}{\numberline {14}Funktionsbeschreibung}{17}{section.14}%
+\contentsline {section}{\numberline {15}Multiuser}{18}{section.15}%
+\contentsline {section}{\numberline {16}Inbetriebnahme}{19}{section.16}%
+\contentsline {section}{\numberline {17}Troubleshooting}{20}{section.17}%

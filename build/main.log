@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  26 MAR 2024 20:18
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  27 MAR 2024 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1411,13 +1411,12 @@ Overfull \hbox (14.32095pt too wide) in paragraph at lines 19--19
 
 ]) (lists.tex (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.toc
 Package cleveref Info: loaded `ngerman' language definitions on input line 1.
-)
+ [1
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [1
-
-]
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
 Package cleveref Info: loaded `ngerman' language definitions on input line 6.
@@ -1573,7 +1572,26 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 [7
 
-] (6_Wichtige Erläuterungen Begriffsdefinitionen.tex)
+] (6_Wichtige Erläuterungen Begriffsdefinitionen.tex
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 6.
+
+
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[8
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 7.
+
+)
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
 Package cleveref Info: loaded `ngerman' language definitions on input line 38.
@@ -1585,7 +1603,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[8
+[9
 
 ] (7_Grundeinstellungen TIA-Portal.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1599,7 +1617,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[9
+[10
 
 ] (8_Projekterstellung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1613,7 +1631,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[10
+[11
 
 ] (9_Hardwarekonfiguration.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1627,7 +1645,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[11
+[12
 
 ] (10_Regeln zur Softwareerstellung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1641,7 +1659,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[12
+[13
 
 ] (11_Antriebsprojektierung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1655,7 +1673,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[13
+[14
 
 ] (12_Visualiserung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1669,7 +1687,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[14
+[15
 
 ] (13_Mehrsprachigkeit Übersetzungen.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1683,7 +1701,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[15
+[16
 
 ] (14_Funktionsbeschreibung.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1697,7 +1715,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[16
+[17
 
 ] (15_Multiuser.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1711,7 +1729,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[17
+[18
 
 ] (16_Inbetriebnahme.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1725,7 +1743,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[18
+[19
 
 ] (17_Troubleshooting.tex)
 File: images/LebbingLogo.png Graphic file (type bmp)
@@ -1739,13 +1757,26 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
 
-[19
+[20
 
 ]
+Overfull \hbox (1.17853pt too wide) in paragraph at lines 63--63
+[]\TU/TrebuchetMS(0)/m/n/12 Beckhoff. »  Quellen Beschreibung.« (2019), Adresse: [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] []
+ []
 
-LaTeX Warning: Empty bibliography on input line 62.
+File: images/LebbingLogo.png Graphic file (type bmp)
+<images/LebbingLogo.png>
+Package cleveref Info: loaded `ngerman' language definitions on input line 63.
 
-(c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
+Package fancyhdr Warning: \headheight is too small (30.0pt): 
+(fancyhdr)                Make it at least 42.1977pt, for example:
+(fancyhdr)                \setlength{\headheight}{42.1977pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
+
+[21
+
+] (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 )
  ***********
@@ -1753,18 +1784,18 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B0B9F2F67FE5E43B491CE314D6A8410;3832.
+(rerunfilecheck)             Checksum: C500D0A298A2F2ACA8115B9204E8FC06;4641.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57454 strings out of 409738
- 1326689 string characters out of 5776037
- 2421730 words of memory out of 5000000
- 78584 multiletter control sequences out of 15000+600000
+ 57670 strings out of 409738
+ 1331116 string characters out of 5776037
+ 2422664 words of memory out of 5000000
+ 78800 multiletter control sequences out of 15000+600000
  565030 words of font info for 74 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 98i,15n,98p,2492b,3988s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,98p,2492b,6827s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (25 pages, 120968 bytes).
+Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (27 pages, 164124 bytes).
