@@ -514,6 +514,8 @@ INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhd
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\tabulary\tabulary.sty
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\tabulary\tabulary.sty
+INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
 INPUT C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex\latex\tools\afterpage.sty
@@ -695,8 +697,6 @@ INPUT .\images\LebbingLogo.png
 INPUT .\17_Troubleshooting.tex
 INPUT .\17_Troubleshooting.tex
 INPUT 17_Troubleshooting.tex
-INPUT .\images\LebbingLogo.png
-INPUT .\images\LebbingLogo.png
 INPUT .\images\LebbingLogo.png
 INPUT .\images\LebbingLogo.png
 INPUT c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  27 MAR 2024 11:41
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.12) (preloaded format=xelatex 2024.3.26)  6 APR 2024 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1214,16 +1214,24 @@ Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 \tymin=\dimen330
 \tymax=\dimen331
 \TY@tablewidth=\dimen332
+) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip134
+\enit@outerparindent=\dimen333
+\enit@toks=\toks63
+\enit@inbox=\box88
+\enit@count@id=\count534
+\enitdp@description=\count535
 ) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen333
-\c@nlinenum=\count534
-\TeXr@lab=\toks63
+\rotheadsize=\dimen334
+\c@nlinenum=\count536
+\TeXr@lab=\toks64
 ) (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks64
-\AP@partial=\box88
-\AP@footins=\box89
+\AP@output=\toks65
+\AP@partial=\box89
+\AP@footins=\box90
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1350,7 +1358,7 @@ Package hyperref Info: Link coloring ON on input line 7.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count535
+\c@lstlisting=\count537
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
  (C:\Users\azeretzk\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
@@ -1451,8 +1459,68 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 1.
  [5
 
 ]) (1_Historie.tex
-Overfull \hbox (29.83798pt too wide) in paragraph at lines 5--24
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]|\TU/TrebuchetMS(0)/m/n/12 D.Klein
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+\TU/TrebuchetMS(0)/m/n/12 Günne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]|\TU/TrebuchetMS(0)/m/n/12 - Historie nach Kapitel 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+\TU/TrebuchetMS(0)/m/n/12 verschoben- Kapitel 11.4.4
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 10--10
+\TU/TrebuchetMS(0)/m/n/12 angepasst, dass dies IMMER
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 10--10
+\TU/TrebuchetMS(0)/m/n/12 angepasst, dass dies IMMER
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 10--10
+[]\TU/TrebuchetMS(0)/m/n/12 Kapitel 16.12 Troubleshoo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\TU/TrebuchetMS(0)/m/n/12 Kapitel 16.13 TIA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\TU/TrebuchetMS(0)/m/n/12 Meldetextimport Proto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\TU/TrebuchetMS(0)/m/n/12 Kapitel 16.13 TIA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\TU/TrebuchetMS(0)/m/n/12 Meldetextimport Proto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\TU/TrebuchetMS(0)/m/n/12 Kapitel 11.4 Meldeklassen
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 10--10
+\TU/TrebuchetMS(0)/m/n/12 Meldeklasseneinstellung hin-
  []
 
 )
@@ -1526,8 +1594,23 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 [4
 
 ] (3_Projektcheckliste.tex
-Overfull \hbox (32.65474pt too wide) in paragraph at lines 5--19
- [][] 
+Underfull \hbox (badness 7168) in paragraph at lines 13--13
+[]|\TU/TrebuchetMS(0)/m/n/12 SPS: F-Destination- und F-Source-Adressbereiche
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\TU/TrebuchetMS(0)/m/n/12 korrekt vergeben (Unter-/Obergrenze für F-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/TrebuchetMS(0)/m/n/12 Netzwerkteilnehmer Profisafe-Adressen Profisafe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/TrebuchetMS(0)/m/n/12 An allen Netzwerkschnittstellen Default F-
  []
 
 )
@@ -1588,6 +1671,9 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 ]
 
+LaTeX Warning: Citation 'Beckhoff' on page 9 undefined on input line 7.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\cite' on input line 7.
 
@@ -1595,6 +1681,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: images/LebbingLogo.png Graphic file (type bmp)
 <images/LebbingLogo.png>
 Package cleveref Info: loaded `ngerman' language definitions on input line 38.
+
+
+LaTeX Warning: Citation 'Beckhoff' on page 9 undefined on input line 38.
 
 
 Package fancyhdr Warning: \headheight is too small (30.0pt): 
@@ -1760,42 +1849,38 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 [20
 
 ]
-Overfull \hbox (1.17853pt too wide) in paragraph at lines 63--63
-[]\TU/TrebuchetMS(0)/m/n/12 Beckhoff. »  Quellen Beschreibung.« (2019), Adresse: [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] []
- []
 
-File: images/LebbingLogo.png Graphic file (type bmp)
-<images/LebbingLogo.png>
-Package cleveref Info: loaded `ngerman' language definitions on input line 63.
+LaTeX Warning: Empty bibliography on input line 62.
 
-Package fancyhdr Warning: \headheight is too small (30.0pt): 
-(fancyhdr)                Make it at least 42.1977pt, for example:
-(fancyhdr)                \setlength{\headheight}{42.1977pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.1977pt}.
-
-[21
-
-] (c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
+(c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 )
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C500D0A298A2F2ACA8115B9204E8FC06;4641.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57670 strings out of 409738
- 1331116 string characters out of 5776037
- 2422664 words of memory out of 5000000
- 78800 multiletter control sequences out of 15000+600000
+ 57969 strings out of 409738
+ 1336018 string characters out of 5776037
+ 2430214 words of memory out of 5000000
+ 79096 multiletter control sequences out of 15000+600000
  565030 words of font info for 74 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 98i,15n,98p,2492b,6827s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,12n,98p,2492b,6582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (27 pages, 164124 bytes).
+Output written on c:\Users\azeretzk\Documents\Eigene Dateien\Projekte\Projektierungshandbuch\Projektierungshadbuch_Latex\build\main.xdv (26 pages, 161276 bytes).
