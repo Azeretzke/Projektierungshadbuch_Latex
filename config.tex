@@ -152,6 +152,12 @@ Status: \state
 \usepackage{tabulary}                                   % advanced table options
 \usepackage{makecell}
 \usepackage{tabto}                                      % tabulator support
+\usepackage{array}
+\setlength{\tabcolsep}{10pt}            %Einstellen des abstands nach links und rechts in einer zeile
+\renewcommand{\arraystretch}{1.35}       %Einstellen der Zeilenhöhe
+\usepackage{enumitem} % Zum Anpassen der Aufzählungseigenschaften
+
+
 
 \usepackage[acronym,toc,translate=babel,
             nonumberlist, nopostdot]{glossaries}
@@ -169,9 +175,11 @@ Status: \state
     hyperref=true,
     style=ieee
 ]{biblatex}
-\addbibresource{references.bib}                         % add bibliography file
-                                   
-\usepackage{afterpage}                                  % commands get expanded after the current page  
+%\DeclareLanguageMapping{ngerman}{german-apa}           % only necessary for biblatex-apa style
+%\DeclareFieldInputHandler{extradate}{\def\NewValue{}}  % remove suffix letters if author and year
+\addbibresource{references.bib}                         % are identical in bibliography
+
+\usepackage(afterpage)                                                          % page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
     \newpage                                            % -> useful for \clearpage
     \null                                               % define command to insert blank page

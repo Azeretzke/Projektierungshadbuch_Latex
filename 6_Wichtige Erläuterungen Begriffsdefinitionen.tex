@@ -1,1 +1,22 @@
 \chapter{Wichtige Erläuterungen, Begriffsdefinitionen}\label{chap:Wichtige Erläuterungen, Begriffsdefinitionen}
+\section{Remanenz}
+Der Begriff \glqq Remanenz\grqq{} beschreibt die Eigenschaft, ob ein Datenpunkt über einen Neustart der CPU hinweg, auch bei Spannungsausfall, unverändert bleibt. Ist die Eigenschaft im globalen oder Instanz-Datenbaustein nicht aktiviert, werden bei CPU-Neustart dementsprechend für die betroffenen Variablen die parametrierten Startwerte als Aktualwerte geladen.
+
+
+\clearpage
+\section{Optimierte Bausteine \cite[13]{Beckhoff}}
+Dieses Kapitel und seine Unterkapitel sind aus dem Programmierleitfaden für S7-1200/S7-1500 übernommen. Falls Verweise auf andere Kapitel aufgeführt und diese unterstrichen sind, be-ziehen sich die Verweise auf das entsprechende Kapitel im Leitfaden und nicht auf andere Kapitel in diesem Dokument.
+S7-1200/1500 Steuerungen besitzen eine optimierte Datenablage. In optimierten Bausteinen sind alle Variablen gemäß ihrem Datentyps automatisch sortiert. Durch die Sortierung wird sichergestellt, dass Datenlücken zwischen den Variablen auf ein Minimum reduziert werden und die Variablen für den Prozessor zugriffsoptimiert abgelegt sind.  
+Nicht optimierte Bausteine sind in S7-1200/1500 Steuerungen nur aus Kompatibilitätsgründen vorhanden. 
+
+\subsection{Vorteile}
+\begin{itemize}
+    \item Der Zugriff erfolgt immer schnellstmöglich, da die Dateiablage vom System optimiert wird und unabhängig von der Deklaration ist.
+    \item Keine Gefahr von Inkonsistenzen durch fehlerhafte, absolute Zugriffe, da generell symbolisch zugegriffen wird.
+    \item Deklarationsänderungen führen nicht zu Zugriffsfehlern, da z.B. HMI-Zugriffe symbolisch erfolgen. 
+    \item Einzelne Variablen können gezielt als remanent definiert werden.
+    \item Keine Einstellungen im Instanzdatenbaustein notwendig. Es wird alles im zugeordneten FB eingestellt (z.B. Remanenz).
+    \item Speicherreserven im Datenbaustein ermöglichen das Ändern ohne Verlust der Aktual Werte (siehe Kapitel 6.2.11 Laden ohne Reinitialisierung).
+    
+
+    \end{itemize}
