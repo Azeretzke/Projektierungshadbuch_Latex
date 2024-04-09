@@ -31,16 +31,16 @@
 \usepackage[nostruts]{titlesec}
 \titleformat{\chapter}[block]
     {\normalfont\LARGE\bfseries}{\thechapter}{10pt}{}
-\titlespacing*{\chapter}{0pt}{*-5}{5pt}
+\titlespacing*{\chapter}{0pt}{0pt}{5pt}
 \titleformat{\section}
 {\normalfont\Large\bfseries}{\thesection}{10pt}{}
-\titlespacing*{\section}{0pt}{*-5}{5pt}
+\titlespacing*{\section}{0pt}{0pt}{5pt}
 \titleformat{\subsection}
 {\normalfont\large\bfseries}{\thesubsection}{10pt}{}
-\titlespacing*{\subsection}{0pt}{*-5}{5pt}
+\titlespacing*{\subsection}{0pt}{0pt}{5pt}
 \titleformat{\subsubsection}
 {\normalfont\normalsize\bfseries}{\thesubsubsection}{10pt}{}
-\titlespacing*{\subsubsection}{0pt}{*-5}{5pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{5pt}
 
 \usepackage[titles]{tocloft}                            % extension for toc, lof, lot and other lists
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}  % dotted chapter leaders
@@ -179,7 +179,7 @@ Status: \state
 %\DeclareFieldInputHandler{extradate}{\def\NewValue{}}  % remove suffix letters if author and year
 \addbibresource{references.bib}                         % are identical in bibliography
 
-\usepackage(afterpage)                                                          % page  
+\usepackage{afterpage}                                                        % page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
     \newpage                                            % -> useful for \clearpage
     \null                                               % define command to insert blank page
