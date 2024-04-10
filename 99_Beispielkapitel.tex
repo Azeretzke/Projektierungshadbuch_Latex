@@ -77,33 +77,6 @@ Außerdem besteht die Möglichkeit den Text um ein Bild herum anzuordnen. Das si
 
 \noindent Hier (s.\cref{tab:example}) lässt sich eine kleine Beispieltabelle, die mit LaTeX erstellt wurde erkennen.
 
-\begin{lstlisting}[caption = C++ Quellcodebeispiel, captionpos = b, label = lst:example]
-    // polls CAN shift registers and writes content into global string msg. then returns it.
-    String processCan(){                
-        String msg = "";
-        int id = 0;
-        int packetSize = CAN.parsePacket();
-    
-        if (packetSize) {
-        // save current message id
-        id = CAN.packetId(); 
-        // push all message bits into single string
-        while (CAN.available()) {       
-            msg += char(CAN.read());
-        }
-        // manage received can messages
-        if(id>=100){                    
-            healthHandler(id,msg);
-        }else if(id<100){
-            valueHandler(id,msg);
-        } 
-        return msg;
-    }
-}
-\end{lstlisting} % \label used for referencing the listing in text
-
-\noindent Und noch ein Beispiel für einen C++ \cref{lst:example}.
-
 \clearpage
 
 \section{Letzter Abschnitt}\label{sec:last} % \label used for referencing the section in text
