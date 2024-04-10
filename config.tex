@@ -14,6 +14,8 @@
 \else
    \ifXeTeX
      \usepackage{fontspec}                              % font encoding for xelatex compiler
+     \usepackage{unicode-math}                          % math encoding and math fonts support
+     \setmathfont{Cambria Math}
    \else 
      \usepackage{luatextra}                             % font encoding for lulatex compiler
    \fi
@@ -22,35 +24,38 @@
 \fi
 
 \newcommand{\titlename}{Projektierungshandbuch TIA-Portal}  % change title of document here
-\newcommand{\version}{15.0}                                 % change version number here
+\newcommand{\version}{1.28}                                 % change version number here
 \newcommand{\authorname}{Daniel Klein-Günnewick}            % change author name here
 \newcommand{\state}{Verbindlich, in Bearbeitung}            % change document state here
-\newcommand{\lasteditor}{Stephan Kampshoff}                 % change last editor name here
+\newcommand{\lasteditor}{David Efing}                       % change last editor name here
+\newcommand{\lastchanged}{15.02.2024 09:05}                 % change last editor name here
 \newcommand{\company}{Lebbing automation \& drives GmbH}    % change company name her
 
-\usepackage[nostruts]{titlesec}
+\usepackage[nostruts]{titlesec}                             % enable editing of chapter, section, ... titles
 \titleformat{\chapter}[block]
-    {\normalfont\LARGE\bfseries}{\thechapter}{10pt}{}
-\titlespacing*{\chapter}{0pt}{0pt}{5pt}
+  {\normalfont\LARGE\bfseries}{\thechapter}{10pt}{}         % customize chapter titles
+\titlespacing*{\chapter}{0pt}{-30pt}{5pt}
 \titleformat{\section}
-{\normalfont\Large\bfseries}{\thesection}{10pt}{}
+  {\normalfont\Large\bfseries}{\thesection}{10pt}{}         % customize section titles
 \titlespacing*{\section}{0pt}{0pt}{5pt}
 \titleformat{\subsection}
-{\normalfont\large\bfseries}{\thesubsection}{10pt}{}
+  {\normalfont\large\bfseries}{\thesubsection}{10pt}{}      % customize subsection title
 \titlespacing*{\subsection}{0pt}{0pt}{5pt}
 \titleformat{\subsubsection}
-{\normalfont\normalsize\bfseries}{\thesubsubsection}{10pt}{}
-\titlespacing*{\subsubsection}{0pt}{0pt}{5pt}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{10pt}{}
+\titlespacing*{\subsubsection}{0pt}{0pt}{5pt}               % customize subsubsection title
 
 \usepackage[titles]{tocloft}                            % extension for toc, lof, lot and other lists
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}  % dotted chapter leaders
 \renewcommand{\cftchapfont}{\normalfont}                % toc entries in normal font style
 \renewcommand{\cftchappagefont}{\normalfont}            % toc page numbers in normal font style
+\cftsetindents{figure}{0pt}{40pt}                       % control space to left margin and the width of the numbers in lof
+\cftsetindents{table}{0pt}{40pt}                        % control space to left margin and the width of the numbers in lot
 \setlength{\cftchapnumwidth}{20pt}                      % adjust the width of the chapter numbers
 \setlength{\cftsecnumwidth}{30pt}                       % adjust the width of the section numbers
 \setlength{\cftsubsecnumwidth}{40pt}                    % adjust the width of the subsection numbers
-\setlength{\cftfignumwidth}{40pt}                       % adjust the width of the figure numbers
-\setlength{\cfttabnumwidth}{40pt}                       % adjust the width of the table numbers
+%\setlength{\cftfignumwidth}{40pt}                       % adjust the width of the figure numbers
+%\setlength{\cfttabnumwidth}{40pt}                       % adjust the width of the table numbers
 \usepackage{tocbibind}                                  % adds all lists to table of contents
 
 \usepackage{fancyhdr}                                   % customize header and footer
@@ -58,9 +63,9 @@
 \fancypagestyle{plain}{
   \fancyhf{}                                              % delete all header and footer content from page style
   \fancyhead[L]{\includegraphics[width=4.0cm]{LebbingLogo.png}}   % left header content
-  \fancyhead[R]{ \titlename~ V\version \par 
+  \fancyhead[R]{\titlename~ V\version \par 
   Status: \state 
-  \par \nouppercase{\leftmark}}                                         % right header content
+  \par \nouppercase{\leftmark}}                                   % right header content
   \setlength{\headheight}{43pt}                           % height of header for more space
   \fancyfoot[L]{\company}                                 % company name in left footer
   \fancyfoot[R]{\thepage}                                 % page number in right footer
@@ -98,6 +103,15 @@ Status: \state
     }
 \urlstyle{same}                                         % allows links within pdf document and to external websites
 
+\usepackage{graphicx}                                   % required for inserting images
+\graphicspath{{images/}}
+\usepackage{wrapfig}                                    % wrap text around figures
+\usepackage{caption}                                    % more customization of captions
+%\captionsetup{figurename=Abb., tablename=Tab.}
+\DeclareCaptionType{mycapequ}[][Formelverzeichnis]      % adds list of equations
+\DeclareCaptionLabelFormat{nan}{Gleichung #2}           % caption compatibility with equations 
+\captionsetup[mycapequ]{labelformat=nan}
+
 \usepackage{xcolor}                                     % load xcolor package for customization
 \usepackage{listings}                                   % supports listings environments
 \definecolor{codegreen}{rgb}{0,0.6,0}                   % define and set custom colors
@@ -129,14 +143,18 @@ Status: \state
 \renewcommand{\lstlistingname}{Quellcode}               % change displayed name of list of listings
 \lstset{style=mystyle}                                  % set listings style to my defined style
 
-\usepackage{graphicx}                                   % required for inserting images
-\graphicspath{{images/}}
-\usepackage{caption}                                    % more customization of captions
-%\captionsetup{figurename=Abb., tablename=Tab.}
-\usepackage{wrapfig}                                    % wrap text around figures
-\DeclareCaptionType{mycapequ}[][Formelverzeichnis]      % adds list of equations
-\DeclareCaptionLabelFormat{nan}{Gleichung #2}           % caption compatibility with equations 
-\captionsetup[mycapequ]{labelformat=nan}
+\usepackage[acronym,toc,translate=babel,
+            nonumberlist, nopostdot]{glossaries}        % adds support for glossary and acronyms and abbreviations
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}             % glossary headings in bold style
+\setlength\glsdescwidth{1.0\hsize}                      % adjust the width of the acronym and glossary lists
+\makenoidxglossaries
+\input{acronyms.tex}                                    % input acronyms.tex and glossary.tex files
+\input{glossary.tex}
+
+\usepackage[ngerman, noabbrev]{cleveref}                % improves referencing of tables, figures, equations, etc.
+%\crefformat{equation}{Gl.~(#2#1#3)}                    % customise reference to Gl. (default "Gleichung")
+\crefname{listing}{Quellcode}{Quellcodes}               % change reference names
+\Crefname{listing}{Quellcode}{Quellcodes}
 
 \usepackage[final]{pdfpages}                            % adds support for pdf file integration
 \usepackage{tikz}                                       % create graphics in latex environment
@@ -145,41 +163,35 @@ Status: \state
 \pgfplotsset{compat=1.18}                               % set used pgfplot package version for compatibility
 \usepackage{amsmath}                                    % enhanced mathematical expressions
 \usepackage{siunitx}                                    % includes si units support
-\usepackage[ngerman, noabbrev]{cleveref}                % improves referencing of tables, figures, equations, etc.
-%\crefformat{equation}{Gl.~(#2#1#3)}                    % customise reference to Gl. (default "Gleichung")
-\crefname{listing}{Quellcode}{Quellcodes}               % change reference name
-\Crefname{listing}{Quellcode}{Quellcodes}
-\usepackage{tabulary}                                   % advanced table options
-\usepackage{makecell}
+\usepackage{mathtools}                                  % more math symbols
+%\usepackage{tabulary}                                   % advanced table options
+%\usepackage{makecell}
+\usepackage{longtable}                                  % for large tables that should continue on the next pages
+\newcommand{\colwidth}[1]{\dimexpr#1\linewidth-2\tabcolsep-1.5\arrayrulewidth}
+%\usepackage{array}
+%\setlength{\tabcolsep}{10pt}                            % control the space from text to cell borders
+%\renewcommand{\arraystretch}{1.35}                      % set the cell height
 \usepackage{tabto}                                      % tabulator support
-\usepackage{array}
-\setlength{\tabcolsep}{10pt}            %Einstellen des abstands nach links und rechts in einer zeile
-\renewcommand{\arraystretch}{1.35}       %Einstellen der Zeilenhöhe
-\usepackage{enumitem} % Zum Anpassen der Aufzählungseigenschaften
-
-
-
-\usepackage[acronym,toc,translate=babel,
-            nonumberlist, nopostdot]{glossaries}
-\renewcommand{\glsnamefont}[1]{\textbf{#1}}
-\setlength\LTleft{15pt}
-\setlength\LTright{0pt}
-\setlength\glsdescwidth{0.8\hsize}                      % adds support for glossary and acronyms and abbreviations
-\makenoidxglossaries
-\input{acronyms}
-\input{glossary}
+\usepackage{enumitem}                                   % for customizing itemize/enumerate
+\newcommand{\multilineitemize}[1]{                      % custom command for controlling itemize environments inside tables
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,left=0pt,label=--,after=\strut]
+      #1
+    \end{itemize}
+  \end{minipage}
+}
 
 \usepackage[                                            % enable bibliography
-    backend=biber, 
-    natbib=true,
-    hyperref=true,
-    style=ieee
+  backend=biber, 
+  natbib=true,
+  hyperref=true,
+  style=ieee
 ]{biblatex}
 %\DeclareLanguageMapping{ngerman}{german-apa}           % only necessary for biblatex-apa style
 %\DeclareFieldInputHandler{extradate}{\def\NewValue{}}  % remove suffix letters if author and year
 \addbibresource{references.bib}                         % are identical in bibliography
 
-\usepackage{afterpage}                                                        % page  
+\usepackage{afterpage}                                  % commands get expanded after the current page  
 \newcommand\blankpage{                                  % is output using \afterpage{\command}
     \newpage                                            % -> useful for \clearpage
     \null                                               % define command to insert blank page
