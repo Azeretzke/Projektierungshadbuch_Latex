@@ -163,7 +163,8 @@ Status: \state
 \pgfplotsset{compat=1.18}                               % set used pgfplot package version for compatibility
 \usepackage{amsmath}                                    % enhanced mathematical expressions
 \usepackage{siunitx}                                    % includes si units support
-\usepackage{mathtools}                                  % more math symbols
+\newcommand{\nmsbracket}[3]{\ensuremath{{}^{\phantom{#2}#1}\mkern-#3mu\mbox{}_{\phantom{#1}#2}\mathopen{[}}}
+%\usepackage{mathtools}                                  % more math symbols
 %\usepackage{tabulary}                                   % advanced table options
 %\usepackage{makecell}
 \usepackage{longtable}                                  % for large tables that should continue on the next pages
