@@ -44,7 +44,7 @@ Das \acrfull{tia}-Portal ist eine Programmierumgebung, die speziell für die Pro
 
 \noindent Oben sind einige Beispielabbildungen mit verschiedenen Skalierungen zu erkennen.
 
-Außerdem besteht die Möglichkeit den Text um ein Bild herum anzuordnen. Das sieht wie folgt aus.
+Außerdem besteht die Möglichkeit den Text, um ein Bild herum anzuordnen. Das sieht wie folgt aus.
 
 \lipsum[1]
 
@@ -180,10 +180,10 @@ Außerdem besteht die Möglichkeit den Text um ein Bild herum anzuordnen. Das si
 
 \begin{figure}[!ht]
     \centering
-    \begin{minipage}[t]{0.95\textwidth}
+    \begin{minipage}[t]{1.0\linewidth}
         \centering
         \begin{tikzpicture}
-            \begin{axis}[xmin=0, xmax=32, xlabel=$k$, ylabel=$x_k$, ymin=0, ymax=1, ymajorgrids=true, xmajorgrids=true, width=0.99\linewidth]
+            \begin{axis}[xmin=0, xmax=32, xlabel=$k$, ylabel=$x_k$, ymin=0, ymax=1, ymajorgrids=true, xmajorgrids=true, width=0.95\linewidth]
                 \addplot+[only marks] table[x=k, y=hk]{data/exampledata.txt};
             \end{axis}
         \end{tikzpicture}
