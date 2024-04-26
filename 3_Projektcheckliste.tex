@@ -19,7 +19,7 @@
         \hline
         HW & SPS Standard F-Überwachungszeit auf mindestens 300 ms &  \\
         \hline
-        HW & Netzwerkteilnehmer Profisafe-Adressen Profisafe-Adresstyp \cite[\textbf{TODO!}]{todo} korrekt eingestellt(SPS-Adressbereiche beachten) &  \\
+        HW & Netzwerkteilnehmer Profisafe-Adressen Profisafe-Adresstyp 1 \cite[67ff]{Siemens:Profisafe} korrekt eingestellt(SPS-Adressbereiche beachten) &  \\
         \hline
         HW & An allen Netzwerkschnittstellen Default F-Überwachungszeit auf 300ms eingestellt &  \\
         \hline
@@ -27,7 +27,108 @@
         \hline
         HW & EA-Adressbereiche richtig eingestellt &  \\
         \hline
-         & \cite[\textbf{TODO!}]{todo} &  \\
+        HW & IP-Adressen eingestellt &  \\
         \hline
+        HW & Teilnehmernummern entsprechend IP-Adresse eingestellt &  \\
+        \hline
+        HW & F-Karten Kanäle korrekt parametriert (ein-/zwei-kanalige Auswertung, Ka-näle deaktiviert/aktiviert, Spannungsversorgung, Diskrepanzzeit, …) &  \\
+        \hline
+        HW & Analogkarten korrekt parametriert (0-10V / 0-20mA / 4-20mA / RTD, …, Kanäle deaktiviert/aktiviert) &  \\
+        \hline
+        HW & Identification \& Maintenance ausgefüllt &  \\
+        \hline
+        HW & Baugruppen kommentiert &  \\
+        \hline
+        HW & Profinet-Gerätenamen entsprechend Norm vergeben &  \\
+        \hline
+        HW & SPS Uhrzeitsynchronisation aktiviert (falls NTP-Server vorhanden) &  \\
+        \hline
+        HW & Betriebsart IO-Device aktiviert und parametriert (falls nötig) &  \\
+        \hline
+        HW & Netzwerktopologie projektiert  &  \\
+        \hline
+        HW & Sync-Domäne konfiguriert (zwingend erforderlich bei IRT, z.B. Time-Based-IO) &  \\
+        \hline
+        HW & Redundanz-Domäne konfiguriert (falls gefordert) &  \\
+        \hline
+        HW & SPS Webserverzugriff aktiviert / deaktiviert (je nach Kundenwunsch) und konfiguriert &  \\
+        \hline
+        HW & SPS Anlauf nach NETZ-Ein auf Warmstart – RUN eingestellt &  \\
+        \hline
+        HW & SPS Vergleich Sollausbau zu Istausbau auf Anlauf der CPU auch bei Unter-schieden eingestellt &  \\
+        \hline
+        HW & SPS maximale Zykluszeit auf mindestens 500 ms eingestellt &  \\
+        \hline
+        HW & System- und Taktmerker aktiviert &  \\
+        \hline
+        HW & SPS PLC-Meldungen Zentrale Meldungsverwaltung in der PLC aktiviert &  \\
+        \hline
+        HW & SPS Uhrzeit eingestellt (Zeitzone etc.) &  \\
+        \hline
+        HW & SPS Stromversorgung parametriert &  \\
+        \hline
+        SW & Meldetextlisten für S120 / G120 eingefügt &  \\
+        \hline
+        SW & EA-Symbolik vollständig &  \\
+        \hline
+        SW & Kein Zugriff auf nicht in der Hardware parametrierte Adressen 
+        (Software Gesamtübersetzen -> Warnungen kontrollieren -> Warnung „Es wird auf nicht projektierte Ein-/Ausgänge zugegriffen“ darf nicht erscheinen)
+         &  \\
+        \hline
+        SW & F-Programm ohne Warnungen &  \\
+        \hline
+        SW & F-Programmzyklus auf 100ms eingestellt &  \\
+        \hline
+        SW & Systemdiagnose programmiert und Meldungen konfiguriert &  \\
+        \hline
+        SW & Kanalfehlerdiagnose, -quittierung und –meldung programmiert &  \\
+        \hline
+        SW & SPS-Systemzeit lesen / schreiben programmiert &  \\
+        \hline
+        SW & Alle EAs aus dem Schaltplan im Programm verwendet &  \\
+        \hline
+        SW & Service-Funktion zum manuellen Ansteuern der Ventile vorhanden &  \\
+        \hline
+        SW & Service-Funktion zum Geber-/Sensorabgleich vorhanden &  \\
+        \hline
+        SW & Meldetexte gepflegt &  \\
+        \hline
+        SW & Fremdkomponenten eingebunden (z.B. Masseversorgung, Kantensteuerung, …) &  \\
+        \hline
+        SW & Anbindung zum Firmennetz (Auftragsdaten, Rollenprotokolle, …) fertiggestellt &  \\
+        \hline
+        Drive & Alle Antriebe angelegt &  \\
+        \hline
+        Drive & DriveCliq-Topologie korrekt &  \\
+        \hline
+        Drive & Regelungsart der Anwendung entsprechend ausgewählt (Servo / Vector) &  \\
+        \hline
+        Drive & Telegramme angelegt &  \\
+        \hline
+        Drive & Safety-Lizenzen vorhanden &  \\
+        \hline
+        Drive & Geber für die benötigte Safety-Funktion ausreichend &  \\
+        \hline
+        Drive & Motordaten etc. korrekt eingegeben &  \\
+        \hline
+        Drive & Parametrierskript ausgeführt &  \\
+        \hline
+        Drive & Uhrzeitsynchronisation eingerichtet / Uhrzeitmodus eingestellt &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+        HMI &  &  \\
+        \hline
+
         \caption{Projektcheckliste}\label{tab:Projektcheckliste} %\label used for referencing the figure in text
     \end{longtable}
