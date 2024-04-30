@@ -125,8 +125,7 @@ Die neue Steuerungsgeneration S7-1500 greift aufgrund der geänderten Prozessora
 Die Remanenz von Variablen einer Instanz definieren Sie im Funktionsbaustein (nicht im In-stanz-DB). Diese Einstellungen gelten damit für alle Instanzen dieses FBs.
 
 \clearpage
-\subsection{Zugriffsarten bei optimierten und nicht optimierten Bausteinen}\label{subsec:Zugriffsarten bei optimierten und nicht optimierten Bausteinen
-}
+\subsection{Zugriffsarten bei optimierten und nicht optimierten Bausteinen}\label{subsec:Zugriffsarten bei optimierten und nicht optimierten Bausteinen}
 \begin{longtable}{| p{\colwidth{0.33}} | p{\colwidth{0.33}} | p{\colwidth{0.33}} |} % columns widths have to add up to 1 otherwise there will be an over- or underfill of the table layout
     \hline
     \textbf{Zugriffsart} & \textbf{Optimierter Baustein} & \textbf{Nicht optimierter Baustein} \\    
@@ -188,3 +187,35 @@ Die Schnittstelle (CPU, CM) überträgt die Daten so, wie sie angeordnet sind (u
     \caption{CPU-CPU Kommunikation}
     \label{fig:CPU-CPU Kommunikation}
 \end{figure}
+
+\textbf{Beispiel:}\par \noindent
+\begin{itemize}
+    \item Eine Variable mit PLC Datentyp (Datensatz) soll an eine CPU weitergegeben werden. 
+    \item In der Sende CPU wird die Variable als Aktualparameter mit dem Kommunikationsbaustein (TSEND\_C) verschaltet.
+    \item In der Empfangs CPU werden die Empfangsdaten einer Variablen gleichen Typs zugewiesen. 
+    \item In diesem Fall kann direkt mit den erhaltenen Daten symbolisch weitergearbeitet werden.    
+\end{itemize}
+
+\noindent \textbf{Hinweis:}\par \noindent
+Als Datensätze können jegliche Variablen oder Datenbausteine (abgeleitet von PLC Datentypen) verwendet werden.\par 
+
+\noindent Es ist auch möglich, die Sende- und Empfangsdaten unterschiedlich zu definieren: \par
+
+
+
+\begin{longtable}{| p{\colwidth{0.33}} | p{\colwidth{0.33}} |} % columns widths have to add up to 1 otherwise there will be an over- or underfill of the table layout
+    \hline
+    \textbf{Sendeart} & \textbf{Empfangsart}\\    
+    \hline
+    optimiert & nicht optimiert\\    
+    \hline
+    nicht optimiert & optimiert\\    
+    \hline
+    
+    %\caption{Zugriffsarten}\label{tab:Zugriffsarten} %\label used for referencing the figure in text
+\end{longtable}
+\noindent Die Steuerung sorgt automatisch für die richtige Datenübertragung und –ablage.
+
+
+\subsection{Laden ohne Reinitialisierung}\label{subsec:Laden ohne Reinitialisierung}
+Um Anwenderprogramme, die bereits in einer Steuerung laufen, nachträglich zu ändern, bieten S7-1200 (Firmware V4.0) und S7-1500 Steuerungen die Möglichkeit, die Schnittstellen von optimierten Funktions- oder Datenbausteinen im laufenden Betrieb zu erweitern. Die geänderten Bausteine können Sie laden, ohne die Steuerung in STOP zu setzen und ohne die Aktualwerte von bereits geladenen Variablen zu beeinflussen.
